@@ -1,0 +1,101 @@
+/* ▼ WHERE YOUR CODE BEGINS */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.015em; /* -1.5% / 100 백분율 */
+}
+
+/* 
+Font size
+
+라이브러리로 정의 할때 font-size 뿐만 아니라 거기에 어울리는
+line-height, letter-spacing도 정의 한다.
+
+*/
+
+/* 접두어로 fs를 붙여준다. */
+.fs-tiny {
+  font-size: 12px;
+  line-height: 1.333333333333333; /* 12px : 1 = 16px: X = 16px / 12px */
+}
+
+.fs-small {
+  font-size: 14px;
+  line-height: 1.428571428571429; /* 14px : 1 = 20px: X = 20px / 14px */
+}
+
+.fs-base {
+  font-size: 16px;
+  line-height: 1.5; /* 16px : 1 = 24px: X = 24px / 16px */
+}
+
+.fs-medium {
+  font-size: 18px;
+  line-height: 1.555555555555556; /* 18px : 1 = 28px: X = 28px / 16px */
+}
+
+.fs-large {
+  font-size: 20px;
+  line-height: 1.6; /* 20px : 1 = 22px: X = 32px / 20px */
+}
+
+.fs-h2 {
+  font-size: 28px;
+  line-height: 1.42857142857142; /* 28px : 1 = 40px: X = 40px / 28px */
+}
+
+.fs-h1 {
+  font-size: 34px;
+  line-height: 1.411764705882353; /* 34px : 1 = 48px: X = 48px / 34px */
+}
+
+/* font-weight */
+
+.fw-light {
+  font-weight: 300;
+}
+
+.fw-regualr {
+  font-weight: 400;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+/* Color */
+
+.text-dark {
+  color: #1f2d3d;
+}
+
+.text-primary {
+  color: #3c4858;
+}
+
+.text-secondary {
+  color: #8492a6;
+}
+
+.text-tertiary {
+  color: #c0ccda;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-success {
+  color: #13ce66;
+}
+
+.text-error {
+  color: #ff5216;
+}
+
+.text-info {
+  color: #009eeb;
+}

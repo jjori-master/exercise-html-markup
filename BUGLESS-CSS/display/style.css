@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+section {
+  background-color: burlywood;
+}
+
+.child {
+  color: white;
+  background-color: gray;
+}

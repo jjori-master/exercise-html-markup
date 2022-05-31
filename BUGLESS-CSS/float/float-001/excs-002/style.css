@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+  background-color: black;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.tab-menu {
+  max-width: 540px;
+  border-bottom: 1px solid #e5eaef;
+  background-color: white;
+}
+
+.tab-menu-item {
+  float: left;
+  margin-right: 20px;
+}
+
+/* 
+  padding 속성은 반드시 a tag에 주는게 좋다.
+  a 태그가 클릭 타겟 영역이기 때문에 a의 크기를 넓혀줘야 한다.
+*/
+.tab-menu-item a {
+  display: block;
+  padding: 16px 20px;
+}
+
+.tab-menu-item.selected a {
+  color: #2860e1;
+  font-weight: 500;
+}
+
+.tab-menu-item.selected {
+  border-bottom: 2px solid #2860e1;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
