@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Reset CSS */
+
+a {
+  color: inherit; /* 부모의 색을 상속 */
+  text-decoration: none;
+}
+
+/* 
+1. body에 설정한 font 설정이 적용되지 않는 경우가 있어서 font 설정을 다시 명시해줘야함.
+2. font size가 기본 16px로 되어 있지 않아 다시 명시 해줘야함.
+*/
+button,
+input,
+textarea {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* 선택시(포커스) 파란색 테두리로 강조되는걸 없앰 */
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/*  리스트 기본 스타일 제거 */
+ol,
+ul,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* 만들려는 시안의 p태그의 font 속성을 확인하여 공통적인 부분을 설정한다. */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2b292d;
+  letter-spacing: -0.01em;
+}
+
+/* >= 768px (Desktop) */
+@media screen and (min-width: 768px) {
+  /* Reset CSS */
+  p {
+    font-size: 22px;
+    line-height: 1.363636363636364;
+  }
+}
+
+/* Custom Grid System - Fix container width  */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
