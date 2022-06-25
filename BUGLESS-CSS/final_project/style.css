@@ -53,7 +53,17 @@ p {
   letter-spacing: -0.01em;
 }
 
-.button {
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-group .fill-button:first-child {
+  margin-right: 8px;
+}
+
+.fill-button {
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: -0.05em;
@@ -64,7 +74,7 @@ p {
   font-weight: 700;
 }
 
-.button.reverted {
+.fill-button.inverted {
   color: #3040c4;
   background-color: #fff;
 }
@@ -91,20 +101,11 @@ p {
   line-height: 1;
   letter-spacing: -0.05em;
   margin-bottom: 24px;
+  color: #2B292D;
 }
 
 .landing-desc {
   margin-bottom: 20px;
-}
-
-.landing-button-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.landing-button-group .button:first-child {
-  margin-right: 8px;
 }
 
 /* >= 768px (Desktop) */
